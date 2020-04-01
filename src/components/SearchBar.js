@@ -1,6 +1,6 @@
 import React from "react";
 
-function SearchBar() {
+function SearchBar({ userSearch }) {
   return (
     <div className='row'>
       <form className='col s12'>
@@ -9,6 +9,7 @@ function SearchBar() {
             <textarea
               id='icon_prefix2'
               className='materialize-textarea'
+              onChange={e => userSearch(e)}
             ></textarea>
             <label for='icon_prefix2'>Search Employee</label>
           </div>

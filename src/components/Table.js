@@ -1,5 +1,5 @@
 import React from "react";
-import TableRow from "./TableRow";
+import TableBody from "./TableBody";
 
 function Table({ usersToDisplay }) {
   return (
@@ -13,7 +13,7 @@ function Table({ usersToDisplay }) {
           <th>Email</th>
         </tr>
       </thead>
-      <TableRow usersToDisplay={usersToDisplay} />
+      <TableBody usersToDisplay={usersToDisplay} />
     </table>
   );
 }
