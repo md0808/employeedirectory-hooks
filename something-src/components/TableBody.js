@@ -2,8 +2,6 @@ import React from "react";
 import TableRow from "./TableRow";
 
 function TableBody({ usersToDisplay }) {
-  console.log(usersToDisplay[0]);
-
   return (
     <tbody>
       {usersToDisplay[0] !== undefined &&
@@ -19,12 +17,7 @@ function TableBody({ usersToDisplay }) {
           />
         ))
       ) : (
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
+        <></>
       )}
     </tbody>
   );

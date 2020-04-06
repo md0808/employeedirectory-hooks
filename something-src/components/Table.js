@@ -2,6 +2,8 @@ import React from "react";
 import TableBody from "./TableBody";
 
 function Table({ usersToDisplay }) {
+  console.log(usersToDisplay[0]);
+
   return (
     <table className='striped responsive'>
       <thead>
