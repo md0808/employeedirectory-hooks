@@ -36,16 +36,13 @@ function DataArea() {
     setUsersToDisplay({ usersToDisplay: searchedResults });
     // console.log(searchedResults);
   };
+
   return (
     <div>
       <SearchBar userSearch={userSearch} />
-
       <Table usersToDisplay={usersToDisplay} />
     </div>
   );
 }
 
 export default DataArea;
-
-
-
